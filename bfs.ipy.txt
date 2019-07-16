@@ -1,0 +1,32 @@
+import collections
+def bfs(graph, rt):
+    visited, queue= [], [rt]
+    while queue:
+        ver= queue.pop(0)
+        prt(ver)
+        for node in graph[ver]:
+            if node not in visited:
+                visited.append(node)
+                queue.append(node)
+
+def prt(ver):
+    print(ver,end=' ')
+
+graph = {6: [1, 2], 1: [2,3], 2: [3], 3: [4,5],4 :[5],5:[1,2]}
+bfs(graph, 6)
+import collections
+def bfs(graph, rt):
+    visited, queue= [], [rt]
+    while queue:
+        ver= queue.pop(0)
+        prt(ver)
+        for node in graph[ver]:
+            if node not in visited:
+                visited.append(node)
+                queue.append(node)
+?
+def prt(ver):
+    print(ver,end=' ')
+?
+graph = {6: [1, 2], 1: [2,3], 2: [3], 3: [4,5],4 :[5],5:[1,2]}
+bfs(graph, 6)
